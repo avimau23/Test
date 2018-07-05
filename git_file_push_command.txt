@@ -1,0 +1,101 @@
+C:\WSDL-WADL\java\Hellojava>git init
+Initialized empty Git repository in C:/WSDL-WADL/java/Hellojava/.git/
+
+C:\WSDL-WADL\java\Hellojava>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        hello1.class
+        hello1.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+C:\WSDL-WADL\java\Hellojava>git add .
+
+C:\WSDL-WADL\java\Hellojava>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   hello1.class
+        new file:   hello1.java
+
+
+C:\WSDL-WADL\java\Hellojava>git commit -m "added Hello programm"
+[master (root-commit) b79fff8] added Hello programm
+ 2 files changed, 8 insertions(+)
+ create mode 100644 hello1.class
+ create mode 100644 hello1.java
+
+C:\WSDL-WADL\java\Hellojava>git remote add origin https://github.com/avimau23/Test.git
+
+C:\WSDL-WADL\java\Hellojava>git push -u origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 656 bytes | 656.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/avimau23/Test.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\WSDL-WADL\java\Hellojava>dir > readme.txt
+
+C:\WSDL-WADL\java\Hellojava>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\WSDL-WADL\java\Hellojava>git add ..
+fatal: ..: '..' is outside repository
+
+C:\WSDL-WADL\java\Hellojava>git add .
+
+C:\WSDL-WADL\java\Hellojava>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   readme.txt
+
+
+C:\WSDL-WADL\java\Hellojava>git commit -u "add new file"
+error: pathspec 'add new file' did not match any file(s) known to git.
+
+C:\WSDL-WADL\java\Hellojava>git commit -m "added new Hello programm"
+[master bf05c52] added new Hello programm
+ 1 file changed, 12 insertions(+)
+ create mode 100644 readme.txt
+
+C:\WSDL-WADL\java\Hellojava>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\WSDL-WADL\java\Hellojava>git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 552 bytes | 552.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/avimau23/Test.git
+   b79fff8..bf05c52  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
